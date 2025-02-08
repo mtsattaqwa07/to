@@ -1,110 +1,87 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="shortcut icon" href="attaqwa.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO IX 2025</title>
+    <link rel="shortcut icon" href="img/to.png" type="image/x-icon" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #2ecc71, #27ae60);
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(img/bg5.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+      }
 
-        .login-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            width: 100%;
-            max-width: 400px;
-        }
+      .container {
+        background-image: url(img/bg0.jpg);
+        width: 300px;
+        height: 330px;
+        background-position: center;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
 
-        .logo {
-            width: 100px;
-            margin-bottom: 1rem;
-        }
+      ul {
+        list-style: none;
+      }
+      li {
+        margin: 10px;
+        display: block;
+      }
+      a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-family: "Times New Roman", Times, serif;
+      }
+      a:hover {
+        color: red;
+      }
+      img {
+        width: 100px;
+        margin-bottom: 5px;
+      }
 
-        .input-group {
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .input-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .error-message {
-            color: red;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            display: none;
-        }
-
-        .login-btn {
-            width: 100%;
-            padding: 10px;
-            background: #27ae60;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .login-btn:hover {
-            background: #219150;
-        }
-        .logo {
-            width: 50px;
-        }
     </style>
-</head>
-<body>
-    <div class="login-container">
-        <img src="attaqwa.png" alt="Logo" class="logo">
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="text" id="password" required>
-                <p class="error-message" id="errorMessage">Password salah!</p>
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-        </form>
-    </div>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const password = document.getElementById('password').value;
-            const correctPassword = "martabat07"; // Ganti dengan password yang benar
-            const errorMessage = document.getElementById('errorMessage');
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/to.png" alt="logo attaqwa" />
 
-            if (password === correctPassword) {
-                window.location.href = 'to.html'; // Ganti dengan halaman tujuan jika login berhasil
-            } else {
-                errorMessage.style.display = 'block';
-            }
-        });
-    </script>
-</body>
+      <ul>
+        <li>
+          <a href="https://forms.gle/Ujh2QzycKUAKMnYF7" target="_blank">
+            MATEMATIKA</a
+          >
+        </li>
+        <li>
+          <a href="https://forms.gle/DMAkqhDu9WwJvCem8" target="_blank"
+            >BAHASA INDONESIA</a
+          >
+        </li>
+        <li>
+          <a href="https://forms.gle/cC5juLiyPo7tuZZh8" target="_blank">IPA</a>
+        </li>
+        <li>
+          <a href="https://forms.gle/4M4FakUNuWYZqWSh7" target="_blank"
+            >BAHASA INGGRIS</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
